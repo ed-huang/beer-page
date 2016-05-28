@@ -1,0 +1,40 @@
+/* scaffolding */
+/* ----------- */
+
+html {
+  overflow-y: scroll;
+  *overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+td {
+  text-align: left;
+}
+
+th {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+}
+
+.row {
+  margin-bottom: 15px;
+}
+
+.loading {
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  transition: transform 0.8s;
+  z-index: 1200;
+}
+
+.loading.move {
+  transform: translate(0, -500px);
+}

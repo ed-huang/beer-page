@@ -1,0 +1,29 @@
+<table class="table table-striped">
+  <thead>
+    <th>Name</th>
+    <th>Abv</th>
+    <th>Brewery</th>
+    <th>City</th>
+    <th>Ibu</th>
+    <th>Srm</th>
+    <th>Tags</th>
+  </thead>
+  <tbody>
+  {{#each beers as |beer|}}
+  <tr>
+    <td class="beer-table--name">{{beer.Name}}</td>
+    <td class="beer-table--abv">{{show-percent beer.abvNumber}}</td>
+    <td class="beer-table--brewery">{{beer.Brewery}}</td>
+    <td class="beer-table--city">{{beer.City}}</td>
+    
+    <td class="beer-table--ibu">{{beer.Ibu}}</td>
+    <td class="beer-table--srm">{{beer.Srm}}</td>
+    <td class="beer-table--tags">{{beer.Tags}}</td>
+  </tr>
+  {{else}}
+  <tr>
+    <td colspan=7>There's no such beer dude!</td>
+  </tr>
+  {{/each}}
+  </tbody>
+</table>

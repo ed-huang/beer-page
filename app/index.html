@@ -15,11 +15,19 @@
     {{content-for "head-footer"}}
   </head>
   <body>
-    {{content-for "body"}}
+    <div id="beer-app" class="container">
+      {{content-for "body"}}
+    </div>
 
     <script src="assets/vendor.js"></script>
     <script src="assets/beer-page.js"></script>
 
     {{content-for "body-footer"}}
   </body>
+  
+    <div class="loading">
+
+      <img src="http://www.picgifs.com/graphics/b/beer/graphics-beer-358247.gif"/>
+    </div>
+  
 </html>
